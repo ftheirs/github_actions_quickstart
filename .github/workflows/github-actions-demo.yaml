@@ -19,10 +19,10 @@ jobs:
   Try-Something-With-Docker:
     runs-on: ubuntu-latest
     container: 
-      image: ubuntu/grafana
+      image: grafana/grafana
     steps:
       - name: ContainerTest
+      - run: uname -a
         uses: actions/checkout@v2
-      # - run: uname -a
       - run: echo "Just echo something"
       - run: echo "Finished OK"
