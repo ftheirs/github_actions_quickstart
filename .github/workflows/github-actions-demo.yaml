@@ -25,6 +25,8 @@ jobs:
            run: |
              node -v
              cat /etc/os-release
+           run: |
+             uname -a
 
   # Try-Something-With-Docker:
   #   runs-on: ubuntu-latest
