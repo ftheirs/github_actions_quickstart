@@ -21,5 +21,7 @@ jobs:
     container: 
       image: ubuntu/grafana
     steps:
-      - name: Running in container
+      - name: ContainerTest
       - run: uname -a
+      uses: actions/checkout@v2
+      - run: echo "Finished OK"
