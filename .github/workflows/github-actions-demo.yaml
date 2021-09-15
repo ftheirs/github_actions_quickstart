@@ -15,3 +15,13 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  Try-Something-With-Docker:
+    runs-on: ubuntu-latest
+    container: ubuntu/grafana
+    steps:
+      - name: Running in container
+      - run: |
+          echo This job does specify a container.
+          echo It runs in the container instead of the VM.
+      - run: uname -a
