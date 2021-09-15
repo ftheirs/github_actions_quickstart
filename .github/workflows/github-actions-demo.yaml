@@ -18,9 +18,8 @@ jobs:
 
   Try-Something-With-Docker:
     runs-on: ubuntu-latest
-    container: ubuntu/grafana
+    container: 
+      image: ubuntu/grafana
     steps:
       - name: Running in container
-      - run: echo "This job does specify a container.""
-      - run: echo "It runs in the container instead of the VM.""
       - run: uname -a
