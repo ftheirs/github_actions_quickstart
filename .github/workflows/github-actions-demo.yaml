@@ -22,7 +22,7 @@ jobs:
       image: grafana/grafana
     steps:
       - name: ContainerTest
-      - run: uname -a
         uses: actions/checkout@v2
+      - run: uname -a
       - run: echo "Just echo something"
       - run: echo "Finished OK"
